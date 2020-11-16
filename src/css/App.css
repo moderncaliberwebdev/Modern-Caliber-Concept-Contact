@@ -1,0 +1,106 @@
+body {
+  background-color: #392033;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 4vw;
+}
+#buttonBg {
+  width: 30vw;
+  height: 12vh;
+  border-radius: 10px;
+  background-color: #fd6051;
+  z-index: 1;
+  position: absolute;
+}
+.contact__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+  margin: 0 5vw;
+}
+
+/* Slide Animations */
+.slideRightFromLeft {
+  animation: slideRightFromLeft 1s forwards;
+}
+
+@keyframes slideRightFromLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: 66%;
+  }
+}
+
+.slideRightFromMiddle {
+  animation: slideRightFromMiddle 1s forwards;
+}
+
+@keyframes slideRightFromMiddle {
+  from {
+    left: 33%;
+  }
+  to {
+    left: 66%;
+  }
+}
+
+.slideLeftFromRight {
+  animation: slideLeftFromRight 1s forwards;
+}
+
+@keyframes slideLeftFromRight {
+  from {
+    left: 66%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.slideLeftFromMiddle {
+  animation: slideLeftFromMiddle 1s forwards;
+}
+
+@keyframes slideLeftFromMiddle {
+  from {
+    left: 33%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.slideMiddleFromLeft {
+  animation: slideMiddleFromLeft 1s forwards;
+}
+
+@keyframes slideMiddleFromLeft {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+    transform: translateX(-15vw);
+  }
+}
+
+.slideMiddleFromRight {
+  animation: slideMiddleFromRight 1s forwards;
+}
+
+@keyframes slideMiddleFromRight {
+  from {
+    left: 66%;
+  }
+  to {
+    left: 33%;
+  }
+}
