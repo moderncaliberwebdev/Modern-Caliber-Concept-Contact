@@ -27,7 +27,7 @@ h1 {
 
 /* Slide Animations */
 .slideRightFromLeft {
-  animation: slideRightFromLeft 1s forwards;
+  animation: slideRightFromLeft 0.5s forwards;
 }
 
 @keyframes slideRightFromLeft {
@@ -40,7 +40,7 @@ h1 {
 }
 
 .slideRightFromMiddle {
-  animation: slideRightFromMiddle 1s forwards;
+  animation: slideRightFromMiddle 0.5s forwards;
 }
 
 @keyframes slideRightFromMiddle {
@@ -53,7 +53,7 @@ h1 {
 }
 
 .slideLeftFromRight {
-  animation: slideLeftFromRight 1s forwards;
+  animation: slideLeftFromRight 0.5s forwards;
 }
 
 @keyframes slideLeftFromRight {
@@ -66,7 +66,7 @@ h1 {
 }
 
 .slideLeftFromMiddle {
-  animation: slideLeftFromMiddle 1s forwards;
+  animation: slideLeftFromMiddle 0.5s forwards;
 }
 
 @keyframes slideLeftFromMiddle {
@@ -79,7 +79,7 @@ h1 {
 }
 
 .slideMiddleFromLeft {
-  animation: slideMiddleFromLeft 1s forwards;
+  animation: slideMiddleFromLeft 0.5s forwards;
 }
 
 @keyframes slideMiddleFromLeft {
@@ -93,7 +93,7 @@ h1 {
 }
 
 .slideMiddleFromRight {
-  animation: slideMiddleFromRight 1s forwards;
+  animation: slideMiddleFromRight 0.5s forwards;
 }
 
 @keyframes slideMiddleFromRight {
