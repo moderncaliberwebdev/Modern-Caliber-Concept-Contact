@@ -8,32 +8,33 @@ import '../css/App.css'
 function App() {
 
   const animateBox = (position) => {
-    console.log(position)
     const button = document.getElementById('buttonBg')
 
-    if(position === 'right' && (button.classList.contains('slideMiddleFromRight') || button.classList.contains('slideMiddleFromLeft'))) {
-      button.className = ''
-      button.classList.add('slideRightFromMiddle')
-    } else if(position == 'right') {
-      button.className = ''
-      button.classList.add('slideRightFromLeft')
+    if(position === 'right') {
+      button.style.left = '66%'
     } 
-
-    else if(position === 'middle' && (button.classList.contains('slideRightFromLeft') || button.classList.contains('slideRightFromMiddle'))) {
-      button.className = ''
-      button.classList.add('slideMiddleFromRight')
-    } else if(position == 'middle') {
-      button.className = ''
-      button.classList.add('slideMiddleFromLeft')
+    else if (position === 'middle') {
+      button.style.left = '33%'
+    }
+    else {
+      button.style.left = '0'
     }
 
-    else if(position === 'left' && (button.classList.contains('slideMiddleFromRight') || button.classList.contains('slideMiddleFromLeft'))) {
-      button.className = ''
-      button.classList.add('slideLeftFromMiddle')
-    } else if(position === 'left') {
-      button.className = ''
-      button.classList.add('slideLeftFromRight')
-    }
+    // else if(position === 'middle' && (button.classList.contains('slideRightFromLeft') || button.classList.contains('slideRightFromMiddle'))) {
+    //   button.className = ''
+    //   button.classList.add('slideMiddleFromRight')
+    // } else if(position == 'middle') {
+    //   button.className = ''
+    //   button.classList.add('slideMiddleFromLeft')
+    // }
+
+    // else if(position === 'left' && (button.classList.contains('slideMiddleFromRight') || button.classList.contains('slideMiddleFromLeft'))) {
+    //   button.className = ''
+    //   button.classList.add('slideLeftFromMiddle')
+    // } else if(position === 'left' && !button.classList.contains('slideLeftFromMiddle')) {
+    //   button.className = ''
+    //   button.classList.add('slideLeftFromRight')
+    // }
   }
 
     return (

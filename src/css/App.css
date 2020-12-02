@@ -9,12 +9,14 @@ h1 {
   font-size: 4vw;
 }
 #buttonBg {
+  left: 0%;
   width: 30vw;
   height: 12vh;
   border-radius: 10px;
   background-color: #fd6051;
   z-index: 1;
   position: absolute;
+  transition: left 0.5s;
 }
 .contact__options {
   display: flex;
@@ -23,84 +25,4 @@ h1 {
   align-items: stretch;
   position: relative;
   margin: 0 5vw;
-}
-
-/* Slide Animations */
-.slideRightFromLeft {
-  animation: slideRightFromLeft 0.5s forwards;
-}
-
-@keyframes slideRightFromLeft {
-  from {
-    left: 0;
-  }
-  to {
-    left: 66%;
-  }
-}
-
-.slideRightFromMiddle {
-  animation: slideRightFromMiddle 0.5s forwards;
-}
-
-@keyframes slideRightFromMiddle {
-  from {
-    left: 33%;
-  }
-  to {
-    left: 66%;
-  }
-}
-
-.slideLeftFromRight {
-  animation: slideLeftFromRight 0.5s forwards;
-}
-
-@keyframes slideLeftFromRight {
-  from {
-    left: 66%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-.slideLeftFromMiddle {
-  animation: slideLeftFromMiddle 0.5s forwards;
-}
-
-@keyframes slideLeftFromMiddle {
-  from {
-    left: 33%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-.slideMiddleFromLeft {
-  animation: slideMiddleFromLeft 0.5s forwards;
-}
-
-@keyframes slideMiddleFromLeft {
-  from {
-    left: 0;
-  }
-  to {
-    left: 50%;
-    transform: translateX(-15vw);
-  }
-}
-
-.slideMiddleFromRight {
-  animation: slideMiddleFromRight 0.5s forwards;
-}
-
-@keyframes slideMiddleFromRight {
-  from {
-    left: 66%;
-  }
-  to {
-    left: 33%;
-  }
 }
